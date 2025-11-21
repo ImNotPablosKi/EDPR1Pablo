@@ -11,13 +11,17 @@ public class App {
             System.out.println("Choose an option:\n" +
                     "  1. Square\n" +
                     "  2. Title\n" +
+                    "  3. Triangle\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
             if (numero == 1) {
                 System.out.printf("Lado del cuadrado: ");
                 int lado = teclado.nextInt();
-                Figures.writeSquare(lado);
+                System.out.println("Que carácter quieres? (* (o) $)");
+                String cosa = teclado.next();
+                Figures.writeSquare(lado, cosa);
+
             } else if (numero == 2) {
                 System.out.printf("Titulo: ");
                 String titulo = teclado.nextLine();
@@ -25,6 +29,11 @@ public class App {
                 Titles.writeTitle(titulo);
             } else if (numero == 0) {
                 Console.close();
+            } else if (numero == 3) {
+                System.out.println("Dime la altura del triangulo:");
+                int alto = teclado.nextInt();
+                Figures.writeInvertedTriangle(alto, alto);
+
             }
         }
     }
