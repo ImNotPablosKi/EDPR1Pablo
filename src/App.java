@@ -12,6 +12,7 @@ public class App {
                     "  1. Square\n" +
                     "  2. Title\n" +
                     "  3. Triangle\n" +
+                    "  4. Header\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -33,6 +34,10 @@ public class App {
                 System.out.println("Dime la altura del triangulo:");
                 int alto = teclado.nextInt();
                 Figures.writeInvertedTriangle(alto, alto);
+
+            } else if (numero == 4) {
+
+                Titles.writeHeader();
 
             }
         }

@@ -4,16 +4,35 @@ public class Titles {
 
         System.out.println("");
 
-        for(int i=0;i<80;i++){
+        for(int i=0;i<c.length()+12;i++){
             System.out.printf("*");
         }
-        System.out.println("");
+        System.out.print("***");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
 
-        System.out.println(c);
+        System.out.print(c);
 
-        for(int i=0;i<80;i++){
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print("***");
+
+        for(int i=0;i<c.length()+12;i++){
             System.out.printf("*");
         }
         System.out.println("");
     }
+
+    public static void writeHeader() {
+
+        for (int i = 0; i < 80; i++) {
+
+            System.out.print(">");
+
+        }
+
+    }
+
 }
