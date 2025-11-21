@@ -14,7 +14,6 @@ public class App {
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
-
             if (numero == 1) {
                 System.out.printf("Lado del cuadrado: ");
                 int lado = teclado.nextInt();
