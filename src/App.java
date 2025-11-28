@@ -12,6 +12,7 @@ public class App {
                     "  1. Square\n" +
                     "  2. Title\n" +
                     "  3. Triangle\n" +
+                    "  4. Rectangle\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -33,6 +34,16 @@ public class App {
                 System.out.println("Dime la altura del triangulo:");
                 int alto = teclado.nextInt();
                 Figures.writeInvertedTriangle(alto, alto);
+
+            } else if (numero == 4) {
+
+                System.out.println("Dame la base: ");
+                int base = teclado.nextInt();
+                System.out.println("Ahora la altura: ");
+                int altura = teclado.nextInt();
+                System.out.println("Para finalizar, dime el carácter a escribir: ");
+                String car = teclado.next();
+                Figures.writeRectangle(base, altura, car);
 
             }
         }
