@@ -13,6 +13,7 @@ public class App {
                     "  2. Title\n" +
                     "  3. Triangle\n" +
                     "  4. Header\n" +
+                    "  5. Trailer\n" +
                     "  0. Quit\n");
 
             int numero = teclado.nextInt();
@@ -38,6 +39,12 @@ public class App {
             } else if (numero == 4) {
 
                 Titles.writeHeader();
+
+            } else if (numero == 5) {
+
+                System.out.println("Cuantos símbolos quieres?: ");
+                int numSimbolos = teclado.nextInt();
+                Titles.writeTailer(numSimbolos);
 
             }
         }

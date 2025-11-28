@@ -29,10 +29,20 @@ public class Titles {
 
         for (int i = 0; i < 80; i++) {
 
-            System.out.print(">");
+            System.out.print("<");
 
         }
 
+        System.out.println();
     }
 
+    public static void writeTailer(int veces) {
+
+        for (int i = 0; i < veces ; i++) {
+
+            System.out.print(">");
+
+        }
+        System.out.println();
+    }
 }
